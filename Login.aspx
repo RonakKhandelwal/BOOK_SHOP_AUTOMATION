@@ -9,9 +9,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <asp:Label Text="Username" runat="server" />&nbsp &nbsp &nbsp<asp:TextBox ID="userName" runat="server" /><br />
-    <asp:Label Text="Password" runat="server" />&nbsp &nbsp &nbsp<asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged" /> <br /><br />
-    &nbsp &nbsp &nbsp<asp:Button ID="submit" runat="server" Text="login" PostBackUrl="~/Home.aspx" />
+    <asp:Label Text="Username" runat="server" />&nbsp &nbsp &nbsp
+        <asp:TextBox ID="userName" runat="server" /><br />
+    <asp:Label Text="Password"  runat="server" />&nbsp &nbsp &nbsp
+        <asp:TextBox TextMode="Password" ID="password" runat="server" OnTextChanged="password_TextChanged" /> <br /><br />
+    &nbsp &nbsp &nbsp<asp:Button ID="submit" runat="server" Text="login" OnClick="submit_Click" /><br />
+        <asp:Label ID="testlbl" runat="server"  />
 
 
     </div>
